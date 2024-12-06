@@ -1,0 +1,136 @@
+.centerFeed {
+  flex: 3;
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  padding: 20px;
+  background: linear-gradient(to bottom, #631010, #130202);
+  color: white;
+  height: 100vh;
+  position: relative; /* Needed for positioning child elements like .cardContainer */
+}
+
+.center-banner {
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  border-radius: 40px;
+  padding: 20px;
+  color: white;
+}
+
+.banner-content h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.banner-content p {
+  font-size: 18px;
+}
+
+.banner-image img {
+  max-width: 400px;
+  height: 400px;
+}
+
+.song-list {
+  margin-top: 30px;
+  overflow-y: auto;
+  max-height: calc(100vh - 400px); /* Ensures the list fits within the view */
+}
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.list-header h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.list-header a {
+  text-decoration: none;
+  color: #f05454;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.list-header a:hover {
+  color: #fff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table thead th {
+  text-align: left;
+  font-size: 14px;
+  font-weight: bold;
+  color: #888;
+  padding-bottom: 10px;
+}
+
+table tbody td {
+  font-size: 14px;
+  padding: 10px 0;
+  color: #ddd;
+}
+
+table tbody tr.active {
+  background: #f05454;
+  color: white;
+  border-radius: 8px;
+}
+
+table tbody tr.active td {
+  color: white;
+}
+
+table tbody tr:hover {
+  background: rgba(240, 84, 84, 0.1);
+  cursor: pointer;
+}
+
+.cardContainer {
+  .cardContainer {
+    display: block; /* Show card on mobile */
+    position: absolute;
+    bottom: 20px; /* Place the card near the bottom */
+    right: 20px; /* Align to the right */
+    width: 50%; /* Make the card responsive */
+    border-radius: 20px;
+    height: 400px;
+    z-index: 10; /* Ensure it appears above other elements */
+    color: white; /* Text color for readability */
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 768px) {
+  .centerFeed {
+    position: relative; /* Ensures card is positioned relative to this container */
+  }
+  .cardContainer {
+    display: block; /* Show card on mobile */
+    position: absolute;
+    bottom: 20px; /* Place the card near the bottom */
+    right: 20px; /* Align to the right */
+    width: 50%; /* Make the card responsive */
+    border-radius: 20px;
+    height: 400px;
+    z-index: 10; /* Ensure it appears above other elements */
+    color: white; /* Text color for readability */
+    overflow: hidden;
+  }
+ 
+}

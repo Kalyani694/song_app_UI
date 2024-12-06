@@ -1,0 +1,80 @@
+/* Main Sidebar Styles */
+.leftsidebar {
+    flex: 1; /* Take up one portion of the flex container */
+    display: flex;
+    flex-direction: column;
+    width: 16rem; /* Set width */
+    height: 100vh;
+    background-color: black; /* Dark background */
+    color: white; /* White text */
+    height: 100vh; /* Full viewport height */
+    padding: 20px; /* Add spacing */
+    font-family: 'Poppins', sans-serif; /* Stylish font */
+
+  }
+  
+  /* Menu Section */
+  .center h6 {
+    color: #888; /* Light gray heading */
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  
+  .center ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .center ul li {
+    margin-bottom: 1rem;
+  }
+  
+  .center ul li a {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .center ul li a:hover {
+    color: #ff5353; /* Highlight on hover */
+  }
+  
+  .center ul li img {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.5rem;
+  }
+  
+  /* Footer Section */
+  .footer {
+    margin-top: auto; /* Push footer to the bottom */
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer ul li {
+    margin-bottom: 1rem;
+  }
+  
+  .footer ul li a {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer ul li a:hover {
+    color: #ff5353; /* Highlight on hover */
+  }
+  

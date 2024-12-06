@@ -1,38 +1,32 @@
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: black;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
-}
+/* Media Query for Mobile Devices */
+@media (max-width: 783px) {
+  .App {
+    flex-direction: column; /* Stack components vertically */
+    align-items: center;
+  }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .navbar {
+    width: 100%; /* Ensure navbar takes full width */
+    padding: 10px; /* Add some padding for mobile view */
   }
-  to {
-    transform: rotate(360deg);
+
+  /* You can adjust Home or other components if needed */
+  .home {
+    width: 100%; /* Ensure the home section takes full width on mobile */
+    padding: 10px; /* Add some spacing */
   }
+
+  /* Adjust other styles for mobile view if necessary */
 }

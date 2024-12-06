@@ -1,0 +1,132 @@
+.navbar {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Ensure full width */
+  box-sizing: border-box; /* Include padding in the width */
+}
+
+.hamburger {
+  display: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logoImg {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 4rem;
+  height: 4rem;
+  margin-top: 10px;
+  margin-left: 4px;
+}
+
+.logo span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.center-header {
+  margin: 0;
+  padding: 10px 20px;
+  margin-left: 5.4rem;
+  margin-right: 16.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  width: 100%; /* Ensure it takes the full navbar width */
+  background-color: #631010;
+  box-sizing: border-box; /* Include padding in width */
+}
+
+.center-header ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.inputSearch {
+  margin-right: 20px; /* Adjust margin for better alignment */
+}
+
+/* Mobile specific styles */
+@media (max-width: 783px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%; /* Ensure full width */
+  }
+
+  .hamburger {
+    display: block;
+    color: white;
+    cursor: pointer;
+  }
+
+  .logoImg {
+    display: flex;
+    margin: 5px;
+    padding: 15px;
+  }
+
+  .logo img {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .logo span {
+    font-size: 22px;
+  }
+
+  .center-header {
+    background-color: black;
+    width: 100%; /* Take up full width */
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start;
+    padding: 10px; /* Add padding for better spacing */
+    gap: 10px; /* Space between child elements */
+    box-sizing: border-box; /* Ensure padding does not affect width */
+  }
+
+  /* Ensure ul is hidden by default */
+  .center-header ul {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%; /* Full width in mobile view */
+    margin: 0;
+    padding: 10px;
+    gap: 10px; /* Add spacing between list items */
+    background-color: #631010; /* Background for better visibility */
+    border-radius: 5px; /* Optional for aesthetics */
+  }
+
+  /* Show the ul when the active class is added */
+  .center-header ul.active {
+    display: flex;
+  }
+
+  .inputSearch {
+    display: none;
+    width: 100%; /* Full width for search input */
+    padding: 10px; /* Add padding for better UX */
+  }
+
+  .center-header .inputSearch.active {
+    display: flex;
+  }
+}

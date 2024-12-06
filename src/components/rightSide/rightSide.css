@@ -1,0 +1,16 @@
+.rightSide {
+    flex: 1;
+    background-color: rgb(20, 14, 14);
+    height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; /* Ensure content stacks properly */
+    justify-content: space-between; /* Adjust spacing of elements */
+}
+
+.cardMargin {
+    margin-top: 350px;
+    margin-bottom: 0;
+}
+

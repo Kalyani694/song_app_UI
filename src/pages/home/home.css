@@ -1,0 +1,35 @@
+.home {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+    position: relative; /* Make it the containing block for absolute positioning */
+}
+
+.leftSideBar {
+    flex: 1;
+}
+
+.centerFeed {
+    flex: 2;
+     /* Needed to position the card relative to this section */
+}
+
+
+/* Mobile Media Query */
+@media (max-width: 783px) {
+    .home {
+        flex-direction: column; /* Stacks the components vertically */
+    }
+
+    .leftSideBar {
+        display: none; /* Hides the left sidebar on mobile */
+    }
+
+    .rightSideBar {
+        display: none; /* Hides the right sidebar on mobile */
+    }
+
+    
+}
